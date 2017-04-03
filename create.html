@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<head>
+	<title>
+		Agora - Election Voting System
+	</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  	   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(function () {
+                $('#election-start-date').datepicker();
+            });
+	</script>
+
+
+</head>
+
+<body>
+	
+	
+	<div id="main" class="col-xs-8 col-xs-offset-2" style='background-image: url("images/bg.png");border: 1px solid #ccc;  border-bottom: 1px solid #ccc;'>
+
+		<div class="row" data-spy="affix" data-offset-top="500" style="width: inherit;position: fixed; z-index: 2;">
+		
+			<nav class="navbar navbar-default" style="background-color: #fff;">
+		      <div class="container-fluid"  >
+		        <!-- Brand and toggle get grouped for better mobile display -->
+		        <div class="navbar-header pull-left">
+		          
+		          <a class="navbar-brand" href="main.html"><img src="images/logo-full.png" style="margin-top:0px;" width="150px"></a>
+		        </div>
+		    
+		        <!-- Collect the nav links, forms, and other content for toggling -->
+		        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+		        	<ul class="nav navbar-nav pull-right">
+		           		<li><a href="features.html">Features</a></li>
+		           		<li><a href="about.html">About</a></li>
+		           		<li><a href="signIn.html">Sign In</a></li>
+		           		<li><a href="signUp.html">Sign Up</a></li>
+		            	<li><a href="vote.html">Vote</a></li>
+		            	<li><a href="create.html">Create Election</a></li>
+		           
+		        	</ul>
+		          
+		        </div><!-- /.navbar-collapse -->
+		      </div><!-- /.container -->
+    		</nav><!-- /.navbar -->	
+		</div>
+		<br>
+
+		
+		<div class="row" style="margin-top:100px;text-align:center;">
+			<h2>Create an election</h2>
+			<div class="container-fluid col-sx-8 col-xs-offset-1" style="margin-top: 50px;">
+				<form id="create-election" class="form-horizontal">
+					<div class="form-group">
+						<label for="election-title" class="control-label col-sm-2">Election Title:</label>
+						<div class="col-sm-8">
+	      					<input type="text" class="form-control" id="election-title" placeholder="Enter Title" style="max-width: 100%;" required>
+	    				</div>
+						
+					</div>
+					<div class="form-group">
+						<label for="election-candidates" class="control-label col-sm-2">Candidates:</label>
+						<div class="col-sm-8">
+	      					<input type="text" class="form-control" id="election-candidates" placeholder="A;B;C;D .." style="max-width: 100%;" required>
+	      					<br>
+	      					<div class="alert alert-info">
+	    						Each separated by a semicolon candidate.The front and rear spaces will be ignored. Of course, a minimum vote requires two candidates.
+	    					</div>
+	    				</div>
+
+						
+					</div>
+
+					<div class="form-group">
+						<label for="election-method" class="control-label col-sm-2">Method:</label>
+						<div class="col-sm-8">
+	      					<select class="form-control" id="election-method" required>
+	      						<option>EVACS</option>
+	      						<option>Simple</option>
+	      						<option>Egalitarian</option>
+	      						<option>Majority</option>
+	      						<option>Approval</option>
+
+	      					</select>
+	    				</div>
+
+						
+					</div>
+
+					<div class="form-group">
+						<label for="election-start-date" class="control-label col-sm-2">Start Date: </label>
+						<div class="col-sm-8">
+	      					<input type="date" name="election-start-date" class="form-control" required/>
+	      					
+	    				</div>
+
+						
+					</div>
+
+					<div class="form-group">
+						<label for="election-end-date" class="control-label col-sm-2">End Date: </label>
+						<div class="col-sm-8">
+	      					<input type="date" name="election-end-date" class="form-control" required/>
+	      					
+	    				</div>
+
+						
+					</div>
+
+					<div class="form-group">
+						<label for="election-email" class="control-label col-sm-2">Your Email: </label>
+						<div class="col-sm-8">
+	      					<input type="email" name="election-email" class="form-control" required/>
+	      					
+	    				</div>
+
+						
+					</div>
+
+
+					<button type="submit" name="election-cancel" class="btn btn-danger">Cancel</button>
+					<button type="submit" name="election-create" class="btn btn-success">Create</button>
+	    				
+				</form>
+				<br><br>
+			</div>
+		</div>
+
+
+		<hr class="bigHr" style="margin-bottom: 0px;">
+		<div class="row" style="background-color: #fff;  display: block;">
+			
+
+			<div class="container-fluid" style="margin-top: 25px;margin-bottom: 20px;">
+				<div class="col-xs-4">
+					<img src="https://aossie.gitlab.io/img/AOSSIE_logo_11_cropped_15cm.png" width="175px">
+				</div>
+				<div class="col-xs-4">
+					<p>
+						We are a not-for-profit umbrella organization for open-source projects developed in Australia. We believe the open-source philosophy provides a resource-efficient channel to transfer knowledge and achieve innovation and education.
+					</p>
+				</div>
+				<div class="col-xs-4" style="text-align: center;">
+
+					Made By:- Kartikeya Kumar Jain<br>
+					As part of demo for<br>
+					<img src="https://developers.google.com/open-source/gsoc/images/gsoc2016-sun-373x373.png" height="50px">
+					<br>Google Summer of Code 2017<br>
+					
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<div class="row">
+		<div class="col-xs-8 col-xs-offset-2">
+			<br><br>
+		</div>
+	</div>
+
+</body>

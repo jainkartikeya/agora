@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head>
+	<title>
+		Agora - Election Voting System
+	</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  	   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(function () {
+                $('#election-start-date').datepicker();
+            });
+	</script>
+
+
+</head>
+
+<body>
+	
+	<div id="main" class="col-xs-8 col-xs-offset-2" style='background-image: url("images/bg.png"); border: 1px solid #ccc;  border-bottom: 1px solid #ccc;'>
+		<div class="row" data-spy="affix" data-offset-top="197" style="width: inherit;position: fixed;z-index: 2;">
+		
+			<nav class="navbar navbar-default" style="background-color: #fff;">
+		      <div class="container-fluid"  >
+		        <!-- Brand and toggle get grouped for better mobile display -->
+		        <div class="navbar-header pull-left">
+		          
+		          <a class="navbar-brand" href="main.html"><img src="images/logo-full.png" style="margin-top:0px;" width="150px"></a>
+		        </div>
+		    
+		        <!-- Collect the nav links, forms, and other content for toggling -->
+		        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+		        	<ul class="nav navbar-nav pull-right">
+		           		<li><a href="features.html">Features</a></li>
+		           		<li><a href="about.html">About</a></li>
+		           		<li><a href="signIn.html">Sign In</a></li>
+		           		<li><a href="signUp.html">Sign Up</a></li>
+		            	<li><a href="vote.html">Vote</a></li>
+		            	<li><a href="create.html">Create Election</a></li>
+		           
+		        	</ul>
+		          
+		        </div><!-- /.navbar-collapse -->
+		      </div><!-- /.container -->
+    		</nav><!-- /.navbar -->	
+		</div>
+		
+
+		
+		<div class="row" style="text-align:center;margin-top: 150px">
+			<div class="row">
+				<h1>Election Title</h1>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-xs-6" style="float: left;">
+					<br>
+					<ul>
+						<li><button class="btn btn-primary">Add</button> Candidate 1</li><br>
+						<li><button class="btn btn-primary">Add</button> Candidate 2</li><br>
+						<li><button class="btn btn-primary">Add</button> Candidate 3</li><br>
+					</ul>
+				</div>
+				<div class="col-xs-6" style="text-align: left;border: 1px solid #000;width: inherit;">
+					
+					You Ballot <pre>                  </pre>
+					<br><pre>                  </pre>
+					<br>
+					<pre>                  </pre>
+					
+				</div>
+			</div>
+			<br>
+			<br>
+
+			<button class="btn btn-success">Vote</button>
+		</div>
+
+
+		<hr class="bigHr" style="margin-bottom: 0px;">
+		<div class="row" style="background-color: #fff;  display: block;">
+			
+
+			<div class="container-fluid" style="margin-top: 25px;margin-bottom: 20px;">
+				<div class="col-xs-4">
+					<img src="https://aossie.gitlab.io/img/AOSSIE_logo_11_cropped_15cm.png" width="175px">
+				</div>
+				<div class="col-xs-4">
+					<p>
+						We are a not-for-profit umbrella organization for open-source projects developed in Australia. We believe the open-source philosophy provides a resource-efficient channel to transfer knowledge and achieve innovation and education.
+					</p>
+				</div>
+				<div class="col-xs-4" style="text-align: center;">
+
+					Made By:- Kartikeya Kumar Jain<br>
+					As part of demo for<br>
+					<img src="https://developers.google.com/open-source/gsoc/images/gsoc2016-sun-373x373.png" height="50px">
+					<br>Google Summer of Code 2017<br>
+					
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="row">
+		<div class="col-xs-8 col-xs-offset-2">
+			<br><br>
+		</div>
+	</div>
+
+</body>
